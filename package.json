@@ -1,10 +1,14 @@
 {
   "name": "serverless-python-example",
   "version": "1.0.0",
-  "description": "",
+  "description": "```bash . ├── api │   └── openapi.yml ├── docs │   └── adl │       └── 0000_ADR_Create_serverless_app_1.10.2021.md ├── README.md ├── serverless.yml └── src     ├── config     │        ├── handlers     │   ├── handler.py     │   └── __init__.py     ├── helpers     │   └── __init__.py     ├── __init__.py     ├── models     │   └── __init__.py     ├── sources     │   └── __init__.py     ├── tests     │   └── __init__.py     └── utils         └── __init__.py ```",
   "main": "index.js",
   "directories": {
     "doc": "docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mkubasz/serverless-python-example.git"
   },
   "author": "Mateusz Kubaszek",
   "license": "ISC",
@@ -17,9 +21,10 @@
   },
   "devDependencies": {
     "redoc-cli": "0.12.3",
+    "serverless-localstack": "^0.4.35",
     "serverless-python-requirements": "^5.1.1"
   },
   "dependencies": {
-    "serverless": "^2.62.0"
+    "serverless": "^2.63.0"
   }
 }

@@ -4,8 +4,9 @@ from mangum import Mangum
 app = FastAPI()
 
 
-@app.get('/')
+@app.get("/test")
 def pong():
-    return {'Ping': 'pong'}
+    return {"Ping": "pong"}
+
 
 api = Mangum(app)
